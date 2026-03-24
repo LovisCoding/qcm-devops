@@ -66,7 +66,7 @@ export default function App() {
           total={questions.length}
           questions={questions}
           userAnswers={userAnswers}
-          onRestart={startQuiz}
+          onRestart={() => setScreen('home')}
           onReview={() => setScreen('review')}
         />
       )}
